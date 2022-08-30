@@ -1,0 +1,187 @@
+
+.buttons {
+    display: flex;
+    padding: 0;   
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+        
+    a {
+        display: block;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: calc(45/16);
+        text-align: center;   
+        margin: 5px 10px;              
+    }
+    
+    li {
+        padding: 10px 5px;
+        margin: 0 10px;
+
+        @media (min-width: 768px) {        
+            padding: 0;        
+        }
+    }
+    
+    @media (min-width: 768px) {        
+        flex-direction: row;        
+    }
+}
+
+.btn {    
+    background: $orange;
+    width: 120px;
+    color: $reverse;
+    transition: $hov;
+    border: 1px solid transparent;  
+    
+    &:hover {
+        background: $reverse;
+        transition: .3s;
+        color: $standart;
+        border-color: $standart;
+    }
+}
+
+.btn-big {    
+    background: $orange;
+    width: 160px; 
+    color: $reverse;
+    transition: $hov;
+    padding: 6px 0;
+    margin: 0 5px;  
+    border: 1px solid transparent;  
+
+    &:hover {   
+        background: $reverse;
+        transition: $hov;
+        color: $standart;
+        border-color: $standart;
+    }
+}
+.reverse-btn {
+    background: $reverse;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: $standart;
+    transition: $hov;
+    
+    &:hover {
+        color: $orange;
+        transition: $hov;
+    }
+}
+
+// blocks line
+
+.btn-3 {
+    
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(30/20);
+    color: $standart;   
+
+    &:hover {
+        color: $orange;
+        transition: $hov;
+    }
+
+    @media (min-width: 768px) {        
+        font-size: 20px;
+    }
+}
+
+// boost localization
+
+.btn-4 {
+    display: block;
+    padding-top: 25px;
+    text-decoration-line: underline;
+    color: $standart;
+    transition: $hov;
+    text-align: center;
+
+    &:hover {
+        color: $orange;
+        transition: $hov;
+    }
+
+    @media (min-width: 992px) {        
+        text-align: start;
+    }
+}
+
+// eighth block
+
+.btn-5 {
+    display: block;    
+    background: $orange;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(60/16);
+    text-align: center;
+    color: $reverse;
+    max-width: 185px;
+    margin: 0 auto;
+    transition: $hov;
+    margin-bottom: 10px;  
+    border: 1px solid transparent;  
+
+    &:hover {
+        background: $reverse;
+        color: $standart;
+        border-color: $standart;
+        transition: $hov;  
+    } 
+
+    @media (min-width: 768px) {        
+        font-size: 16px;
+        max-width: 193px;
+    } 
+}
+
+// tenth block
+
+.studies-column-items a {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    color: $standart;
+    padding-top: 15px;
+
+    &:hover {
+        color: $orange;
+        transition: $hov;
+    }
+}
+
+.text-block-links {
+    text-decoration: underline;
+    color: $standart; 
+    
+    &:hover{
+        color: $orange;
+        transition: $hov;
+    }
+}
+
+.btn-6 {
+    display: block;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: calc(30/20);
+    color: $standart;
+    transition: $hov;
+    
+    &:hover {
+        color: $orange;
+        transition: $hov;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 20px;
+    }    
+}
+
