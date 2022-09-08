@@ -80,7 +80,7 @@
     position: relative;
     align-items: center;
     background-color: $reverse;
-    padding: 29px 51px;
+    padding: 29px 0px;
     border-bottom: 1px solid $border;    
     font-family: $stnd-font;
     z-index: 99999;
@@ -130,6 +130,7 @@
         flex-direction: column;
         text-align: center;  
         padding-bottom: 10px;
+        width: 40%;
         
         @media (min-width: 992px) {        
             padding-left: 23px; 
@@ -139,7 +140,8 @@
             align-items: center;          
             flex-direction: row;
             flex-grow: 1;    
-            padding-bottom: 0;   
+            padding-bottom: 0; 
+            justify-content: flex-start;  
         }
           
         a {
@@ -156,6 +158,10 @@
             }
             
             @media (min-width: 992px) {        
+                padding: 5px 28px; 
+            }
+
+            @media (min-width: 1440px) {        
                 padding: 0 28px; 
             }
         }
@@ -174,17 +180,18 @@
     }
 
     .buttons {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         text-align: center;
        
-        @media (max-width: 991px) {
-            padding: 0;                
+        @media (min-width: 1200px) {
+            padding: 0;  
+            flex-direction: row;              
         }
 
         >li {      
             padding: 8px 0;  
-            @media (max-width: 991px) {
+            @media (min-width: 1400px) {
                 width: 50%;                
             }
         }

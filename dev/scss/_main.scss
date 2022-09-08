@@ -17,10 +17,12 @@
     font-weight: 400;
     font-size: 25px;
     line-height: calc(35/25);  
+    text-align: center;
     
     @media (min-width: 768px) {
         padding-right: 15px;
-        width: 45%;    
+        width: 45%;  
+        text-align: start;  
     }
 
     &>ul {
